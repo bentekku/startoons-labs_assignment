@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+  background-color: antiquewhite;
+  padding: 32px;
+}
+body main {
+  width: 375px;
+  min-height: 768px;
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.1));
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 12px;
+  background-color: #eee;
+}
+body header {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
+}
+body header .color-div {
+  height: 16px;
+  background-color: #002647;
+}
+body header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 16px;
+  gap: 16px;
+  color: #012e57;
+  font-weight: 600;
+}
+body header .navigation img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: invert(7%) sepia(82%) saturate(3451%) hue-rotate(195deg) brightness(96%) contrast(101%);
+}
+body .patient-details {
+  width: 100%;
+  padding: 16px;
+  color: #012e57;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #d9d9d9;
+}
+body .patient-details .left h1 {
+  font-size: 18px;
+}
+body .patient-details .left h2 {
+  font-size: 14px;
+}
+body .patient-details .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 3px solid #002647;
+  border-radius: 50%;
+}
+body .patient-details .right img {
+  width: 36px;
+  height: 36px;
+  filter: invert(7%) sepia(82%) saturate(3451%) hue-rotate(195deg) brightness(96%) contrast(101%);
+}
+body .goal-details {
+  width: 90%;
+  height: 150px;
+  padding: 16px;
+  margin: -12px auto 12px auto;
+  border-radius: 16px;
+  background-color: #002647;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+body .goal-details h1 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+body .goal-details .stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 85%;
+}
+body .goal-details .stats svg {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+body .goal-details .stats svg g {
+  transform: translateX(62px);
+  scale: 0.5;
+}
+body .goal-details .stats svg g circle {
+  transition: 0.5s;
+}
+body .goal-details .stats svg g #range-circle {
+  stroke: #fcb000;
+  stroke-dasharray: 1;
+  transition: 0.5s;
+}
+body .goal-details .stats svg g text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+body .goal-details .stats .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+body .goal-details .stats .right .emg__rating,
+body .goal-details .stats .right .rom__rating {
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  width: 86px;
+  height: 42px;
+  padding: 5px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body .goal-details .stats .right .emg__rating img,
+body .goal-details .stats .right .rom__rating img {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  align-self: center;
+}
+body .goal-details .stats .right .emg__rating img {
+  filter: invert(60%) sepia(89%) saturate(3406%) hue-rotate(73deg) brightness(122%) contrast(90%);
+}
+body .goal-details .stats .right .rom__rating img {
+  filter: invert(16%) sepia(79%) saturate(6892%) hue-rotate(11deg) brightness(86%) contrast(123%);
+}
+body .personal-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  font-size: 14px;
+  color: #2c2b2b;
+  font-weight: 600;
+  border-bottom: 2px solid #d9d9d9;
+}
+body .personal-details .label {
+  font-weight: 600;
+  color: #b6b6b6;
+  width: 72px;
+  flex: 1;
+}
+body .personal-details .value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+}
+body .personal-details .value img {
+  width: 18px;
+  height: 18px;
+  filter: invert(7%) sepia(82%) saturate(3451%) hue-rotate(195deg) brightness(96%) contrast(101%);
+}
+body .personal-details div {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+body .medical-history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 2px solid #d9d9d9;
+  color: #002647;
+  font-weight: 600;
+  font-size: 14px;
+}
+body .medical-history .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 12px;
+}
+body .medical-history .left img {
+  width: 24px;
+  height: 24px;
+  filter: invert(12%) sepia(49%) saturate(1890%) hue-rotate(181deg) brightness(98%) contrast(106%);
+}
+body .medical-history .right {
+  width: -moz-max-content;
+  width: max-content;
+  color: #2c2b2b;
+  width: 100%;
+}
+
+.red {
+  filter: invert(16%) sepia(79%) saturate(6892%) hue-rotate(11deg) brightness(86%) contrast(123%);
+}/*# sourceMappingURL=main.css.map */

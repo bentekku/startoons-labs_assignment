@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Database | S. Meena</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="color-div"></div>
+        <div class="navigation">
+          <img
+            src="./images/svgs/arrow_left_alt_FILL1_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <span>View patient</span>
+        </div>
+      </header>
+
+      <section class="patient-details">
+        <div class="left">
+          <h1><span>S. Meena</span>,<span>&nbsp;F/23</span></h1>
+          <h2>Patient ID: 87 20200727153457</h2>
+        </div>
+        <div class="right">
+          <img
+            src="./images/svgs/person_FILL1_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="goal-details">
+        <h1>Goal reached</h1>
+        <div class="stats">
+          <svg>
+            <g fill="none" stroke="#ddd">
+              <circle cx="150" cy="150" r="125" stroke-width="20"></circle>
+              <circle
+                id="range-circle"
+                cx="150"
+                cy="150"
+                r="125"
+                stroke-width="20"
+              ></circle>
+              <text
+                x="105"
+                y="160"
+                text-anchor="center"
+                stroke="none"
+                fill="#fff"
+                font-size="42px"
+              >
+                0%
+              </text>
+            </g>
+          </svg>
+          <div class="right">
+            <div class="emg__rating">
+              <span>EMG</span>
+              <img src="./images/svgs/up-ward-line.svg" alt="" />
+            </div>
+            <div class="rom__rating">
+              <span>ROM</span>
+              <img src="./images/svgs/down-ward-line.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="personal-details">
+        <div>
+          <p class="label">Phone No.</p>
+          <p class="value">
+            <img
+              src="./images/svgs/call_FILL1_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />8022334455
+          </p>
+        </div>
+        <div>
+          <p class="label">Mail ID</p>
+          <p class="value">
+            <img
+              src="./images/svgs/mail_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />meenarabinsachin2@gmail.com
+          </p>
+        </div>
+        <div>
+          <p class="label">Affected side</p>
+          <p class="value">
+            <img
+              class="red"
+              src="./images/svgs/accessibility_FILL1_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />Bilateral
+          </p>
+        </div>
+        <div>
+          <p class="label">Condition</p>
+          <p class="value">
+            <img
+              src="./images/svgs/tibia_alt_FILL1_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />Ortho
+          </p>
+        </div>
+        <div>
+          <p class="label">Speciality</p>
+          <p class="value">
+            <img
+              src="./images/svgs/medical_services_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />Oesteoarthritis
+          </p>
+        </div>
+      </section>
+      <section class="medical-history">
+        <div class="left">
+          <img
+            src="./images/svgs/lab_profile_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <p>Medical history</p>
+        </div>
+        <div class="right">Hypertension, DM, Hyperthyroidism</div>
+      </section>
+    </main>
+    <script>
+      const value = 100;
+      let rangeCircle = document.getElementById("range-circle");
+      // rangeCircle.style.strokeDasharray = 1;
+      document.querySelector("text").innerHTML = value + "%";
+    </script>
+  </body>
+</html>
